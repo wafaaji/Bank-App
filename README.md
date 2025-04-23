@@ -1,16 +1,48 @@
 # bank_account
 
-A new Flutter project.
+# 🔐 Bank OTP Verification App
 
-## Getting Started
+A Flutter app for verifying a bank account using One-Time Passwords (OTP). It includes user authentication, OTP resend logic with limitations, and a simulated back-end using a fake repository.
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+- Enter account number to receive OTP
+- Auto-generated 4-digit OTP with expiration
+- OTP verification screen
+- Limit OTP resend to 5 times only
+- Mocked back-end (no actual API required)
+- Clean architecture (Repository & Use Case pattern)
+- Dependency injection with GetIt
+- State management using GetX
+- Navigation using GetX routes
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📂 Project Structure
+lib/
+├── core/                           # Core utilities (common models, constants, services)
+│   └── ...
+├── features/
+│   ├── bank-auth/                  # Bank authentication feature
+│   │   ├── data/                   # Data layer (fake API, repositories)
+│   │   │   └── repositories/
+│   │   ├── domain/                 # Domain layer (entities, use cases, abstract repos)
+│   │   │   ├── usecases/
+│   │   │   └── repositories/
+│   │   │   └── entities/
+│   │   └── presentation/           # UI layer (controllers, screens, widgets)
+│   │       ├── controllers/
+│   │       └── screens/
+│   │       └── widgets/
+│   ├── home/                       # Home screen feature
+│   │   └── presentation/
+│   │       └── screens/
+│   └── splash/                     # Splash screen feature
+│       └── screens/
+├── main.dart                       # Entry point with routing & DI setup
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## 🧰 Tech Stack
+
+- **Flutter** for UI
+- **Dart** for logic
+- **GetX** for state management and routing
+- **GetIt** for dependency injection
