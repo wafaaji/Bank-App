@@ -1,4 +1,4 @@
-# bank_account
+# Bank Account
 
 # 🔐 Bank OTP Verification App
 
