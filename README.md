@@ -18,26 +18,26 @@ A Flutter app for verifying a bank account using One-Time Passwords (OTP). It in
 
 ## 📂 Project Structure
 lib/
-├── core/                           # Core utilities (common models, constants, services)
+├── core/                           
 │   └── ...
 ├── features/
-│   ├── bank-auth/                  # Bank authentication feature
-│   │   ├── data/                   # Data layer (fake API, repositories)
+│   ├── bank-auth/                  
+│   │   ├── data/                   
 │   │   │   └── repositories/
-│   │   ├── domain/                 # Domain layer (entities, use cases, abstract repos)
+│   │   ├── domain/                
 │   │   │   ├── usecases/
 │   │   │   └── repositories/
 │   │   │   └── entities/
-│   │   └── presentation/           # UI layer (controllers, screens, widgets)
+│   │   └── presentation/          
 │   │       ├── controllers/
 │   │       └── screens/
 │   │       └── widgets/
-│   ├── home/                       # Home screen feature
+│   ├── home/                      
 │   │   └── presentation/
 │   │       └── screens/
-│   └── splash/                     # Splash screen feature
+│   └── splash/                     
 │       └── screens/
-├── main.dart                       # Entry point with routing & DI setup
+├── main.dart                      
 
 
 ## 🧰 Tech Stack
